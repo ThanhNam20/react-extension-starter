@@ -8,7 +8,7 @@ type Props = {
 
 const MaterLayout = ({ children }: Props) => {
   return (
-    <div>
+    <div className="main position-relative shadow">
       <Header />
       <main>{children}</main>
       <Footer />
