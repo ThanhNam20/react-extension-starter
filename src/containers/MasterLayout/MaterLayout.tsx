@@ -1,4 +1,4 @@
-import React, { Children, ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 
@@ -10,7 +10,7 @@ const MaterLayout = ({ children }: Props) => {
   return (
     <div className="main position-relative shadow">
       <Header />
-      <main>{children}</main>
+      <div id="wrapper">{children}</div>
       <Footer />
     </div>
   );

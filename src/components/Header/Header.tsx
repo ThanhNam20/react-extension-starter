@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header className="sticky-top bg-white p-3">
       <div className="row justify-content-between align-items-center">
-        <div className="col-sm-3">
+        <div className="col-3">
           <a
             href="rebates.com"
             target="_blank"
@@ -15,7 +15,7 @@ const Header = () => {
               alt="Rebates logo"
             />
           </a>
-          <div className="menu-bar-icon header-icon ms-2">
+          <a href="#" className="menu-bar-icon header-icon ms-2">
             <svg
               version="1.1"
               id="Layer_1"
@@ -42,14 +42,14 @@ const Header = () => {
       l0,0C491,427.1,475.7,442.4,456.9,442.4z"
               />
             </svg>
-          </div>
+          </a>
         </div>
-        <div className="col-sm-7 text-center">
+        <div className="col-7 text-center">
           <h2 className="title2 mb-0 text-limit-1">Rebate.com</h2>
         </div>
-        <div className="col-sm-2">
+        <div className="col-2">
           <div className="text-end">
-            <div className="close-extenstion-icon header-icon">
+            <a href="#" className="close-extenstion-icon header-icon">
               <svg
                 version="1.1"
                 id="Layer_1"
@@ -73,7 +73,7 @@ const Header = () => {
         c-1.4,1.8-2.4,3.4-3.7,4.7c-58.3,58.3-116.7,116.5-175,174.8C70,485.1,63.8,490.9,55.3,493.8z"
                 />
               </svg>
-            </div>
+            </a>
           </div>
         </div>
       </div>
