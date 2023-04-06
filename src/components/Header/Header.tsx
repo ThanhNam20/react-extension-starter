@@ -1,6 +1,9 @@
 import React from 'react';
 
 const Header = () => {
+  const closeApp = () => {
+    window.close();
+  };
   return (
     <header className="sticky-top bg-white p-3">
       <div className="row justify-content-between align-items-center">
@@ -49,7 +52,11 @@ const Header = () => {
         </div>
         <div className="col-2">
           <div className="text-end">
-            <a href="#" className="close-extenstion-icon header-icon">
+            <a
+              onClick={closeApp}
+              href="#"
+              className="close-extenstion-icon header-icon"
+            >
               <svg
                 version="1.1"
                 id="Layer_1"

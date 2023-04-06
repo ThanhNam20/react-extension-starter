@@ -121,7 +121,8 @@ var options = {
           },
         ],
         exclude: /node_modules/,
-      }
+      },
+      { test: /\\.(png|jp(e*)g|svg|gif)$/, use: ['file-loader'], }
     ],
   },
   resolve: {
