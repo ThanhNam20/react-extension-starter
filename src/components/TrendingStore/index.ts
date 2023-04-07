@@ -1,3 +1,3 @@
-import TrendingStore from "./TrendingStore";
+import TrendingStore from './TrendingStore';
 
-export default TrendingStore
+export default TrendingStore;

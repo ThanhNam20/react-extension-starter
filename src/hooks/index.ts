@@ -1,3 +1,3 @@
-import useCloseApp from "./useCloseApp";
+import useCloseApp from './useCloseApp';
 
 export { useCloseApp };

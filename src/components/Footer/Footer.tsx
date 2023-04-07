@@ -1,6 +1,15 @@
 import React from 'react';
 import './footer.css';
+import { goTo } from 'react-chrome-extension-router';
+import Home from '../../pages/home';
+import Register from '../../pages/Register';
+import Login from '../../pages/Login';
+import Search from '../../pages/Search';
 const Footer = () => {
+  const goToPage = (component: React.ComponentType, message: string | '') => {
+    goTo(component, message);
+  };
+
   return (
     <div>
       <div className="extension-footer bg-white w-100">
@@ -12,9 +21,13 @@ const Footer = () => {
                 id="pills-tab"
                 role="tablist"
               >
-                <li className="nav-item" role="presentation">
+                <li
+                  onClick={() => goToPage(Home, '')}
+                  className="nav-item"
+                  role="presentation"
+                >
                   <button
-                    className="nav-link"
+                    className="nav-link active"
                     id="pills-home-tab"
                     data-bs-toggle="pill"
                     data-bs-target="#pills-home"
@@ -59,7 +72,11 @@ const Footer = () => {
                     <span className="d-block"> Home</span>
                   </button>
                 </li>
-                <li className="nav-item" role="presentation">
+                <li
+                  onClick={() => goToPage(Search, '')}
+                  className="nav-item"
+                  role="presentation"
+                >
                   <button
                     className="nav-link"
                     id="pills-search-tab"
@@ -90,10 +107,14 @@ const Footer = () => {
            M670,386.5c0,143.5-116.7,260.2-260.2,260.2S149.7,529.9,149.7,386.5c0-143.5,116.7-260.2,260.2-260.2S670,243,670,386.5z"
                       />
                     </svg>
-                    <span className="d-block"> Search</span>
+                    <span className="d-block">Search</span>
                   </button>
                 </li>
-                <li className="nav-item" role="presentation">
+                <li
+                  onClick={() => goToPage(Login, '')}
+                  className="nav-item"
+                  role="presentation"
+                >
                   <button
                     className="nav-link"
                     id="pills-user-tab"

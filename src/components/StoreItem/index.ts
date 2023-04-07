@@ -1,3 +1,3 @@
-import StoreItem from "./StoreItem";
+import StoreItem from './StoreItem';
 
-export default StoreItem
+export default StoreItem;

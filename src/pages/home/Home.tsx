@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <>
       <CarouselComponent />
-      <TrendingStore />
+      <TrendingStore redirect={'home'} listBrands={[]} />
     </>
   );
 };

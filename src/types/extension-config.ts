@@ -1,4 +1,4 @@
-import { ResponseApi } from "./utils";
+import { ResponseApi } from './utils';
 
 export type ExtensionConfig = ResponseApi<{
   multiply_factor_overlay: number;
@@ -7,4 +7,4 @@ export type ExtensionConfig = ResponseApi<{
   paging_size_coupon: number;
   max_percent_without_multiply: number;
   is_cashback_db: number;
-}>
+}>;

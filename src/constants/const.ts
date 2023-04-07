@@ -1,3 +1,3 @@
 export const REACT_QUERY_KEY = {
   EXTENSION_CONFIG: 'EXTENSION_CONFIG',
-}
+};

@@ -3,5 +3,4 @@ export type Brand = {
   domain: string;
   images: string;
   is_premium: string;
-}
-
+};

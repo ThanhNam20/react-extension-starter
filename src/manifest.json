@@ -2,7 +2,6 @@
   "manifest_version": 3,
   "name": "Rebates",
   "description": "Join Rebates, A Money-Saving Website Curated Just For Your Shopping Needs!",
-  "options_page": "options.html",
   "background": { "service_worker": "background.bundle.js" },
   "action": {
     "default_popup": "popup.html",

@@ -4,7 +4,12 @@ import StoreItem from '../StoreItem';
 
 type ListBrands = Omit<Brand, 'domain' | 'is_premium'>[];
 
-const TrendingStore = () => {
+type TrendingStoreProps = {
+  redirect: 'home' | 'search';
+  listBrands: ListBrands;
+};
+
+const TrendingStore = ({ redirect, listBrands }: TrendingStoreProps) => {
   const initialStores: ListBrands = [
     {
       images: '123',
@@ -52,22 +57,25 @@ const TrendingStore = () => {
 
   return (
     <>
-      <div className="d-flex justify-content-between align-items-center px-1">
-        <h3 className="title1 my-3">Trending Stores</h3>
-        <a
-          href="https://rebates.com/"
-          target="_blank"
-          className="text-decoration-none"
-          rel="noreferrer"
-        >
-          <button
-            type="button"
-            className="btn btn-sm py-1 bg-color-first text-white d-block w-100 "
+      {redirect === 'home' && (
+        <div className="d-flex justify-content-between align-items-center px-1">
+          <h3 className="title1 my-3">Trending Stores</h3>
+          <a
+            href="https://rebates.com/"
+            target="_blank"
+            className="text-decoration-none"
+            rel="noreferrer"
           >
-            View All
-          </button>
-        </a>
-      </div>
+            <button
+              type="button"
+              className="btn btn-sm py-1 bg-color-first text-white d-block w-100 "
+            >
+              View All
+            </button>
+          </a>
+        </div>
+      )}
+
       <div className="list-stores mb-2">
         {listStores.map((item) => (
           <StoreItem
