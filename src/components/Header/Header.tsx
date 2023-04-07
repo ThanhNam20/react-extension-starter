@@ -1,4 +1,5 @@
 import React from 'react';
+import { LoginIcon } from '../../assets';
 
 const Header = () => {
   const closeApp = () => {
@@ -7,18 +8,8 @@ const Header = () => {
   return (
     <header className="sticky-top bg-white p-3">
       <div className="row justify-content-between align-items-center">
-        <div className="col-3">
-          <a
-            href="rebates.com"
-            target="_blank"
-            className="logo-container text-decoration-none"
-          >
-            <img
-              src="http://design.admedia.com/rebates_new/Rebates_extension_assets/assets/images/logo-icon.png"
-              alt="Rebates logo"
-            />
-          </a>
-          <a href="#" className="menu-bar-icon header-icon ms-2">
+        <div className="col-6">
+          <a href="/" className="menu-bar-icon header-icon me-2">
             <svg
               version="1.1"
               id="Layer_1"
@@ -46,15 +37,19 @@ const Header = () => {
               />
             </svg>
           </a>
+          <a
+            href="https://rebates.com"
+            className="logo-container text-decoration-none"
+          >
+            <img src={LoginIcon} alt="Rebates logo" />
+          </a>
         </div>
-        <div className="col-7 text-center">
-          <h2 className="title2 mb-0 text-limit-1">Rebate.com</h2>
-        </div>
+
         <div className="col-2">
           <div className="text-end">
             <a
               onClick={closeApp}
-              href="#"
+              href="/"
               className="close-extenstion-icon header-icon"
             >
               <svg

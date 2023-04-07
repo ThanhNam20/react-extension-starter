@@ -4,7 +4,7 @@ class Http {
   instance: AxiosInstance;
   constructor() {
     this.instance = axios.create({
-      baseURL: 'https://items.com/',
+      baseURL: `${process.env.REACT_APP_BASE_URL}`,
       timeout: 10000,
       headers: {
         'Content-Type': 'application/json',
