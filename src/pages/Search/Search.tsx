@@ -25,7 +25,12 @@ const Search = () => {
               </button>
             </div>
             <div className="searchbox-results">
-              <ul id="scrollTopList">{/* <SearchItem /> */}</ul>
+              <ul id="scrollTopList">
+                <SearchItem />
+                <SearchItem />
+                <SearchItem />
+                <SearchItem />
+              </ul>
             </div>
           </form>
         </div>
